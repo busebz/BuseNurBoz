@@ -1,0 +1,158 @@
+.projects {
+  margin: 3.75rem auto;
+  padding: 0 3.125rem;
+  width: 80%;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 0 4rem 0;
+  flex-wrap: wrap;
+}
+
+.project a {
+  color: black;
+}
+
+.project .description {
+  width: 38%;
+  line-height: 1.5;
+}
+
+.project .description h2 {
+  margin-bottom: 1.5625rem;
+}
+
+.project .description .text {
+  margin: 10px 0;
+}
+
+.project .description p {
+  font-size: 1rem;
+}
+
+.project .description .links {
+  margin: 18px 0;
+}
+
+.project .description .links p {
+  margin: 0.3125rem 0;
+}
+
+.projects .images {
+  width: 54%;
+  margin: 3.75rem auto;
+}
+
+.projects .images .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.projects .images p {
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    margin: 3rem 4rem;
+  }
+
+  .project .description {
+    width: 45%;
+  }
+
+  .projects .images {
+    width: 50%;
+  }
+}
+
+@media (max-width: 920px) {
+  .projects {
+    margin: 5rem auto;
+    padding: 0 3.125rem;
+    width: 78%;
+  }
+
+  .projects h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 7rem 0;
+  }
+
+  .project .description {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .projects .images {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .projects .images .image img {
+    height: auto;
+  }
+
+  .projects .images p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 610px) {
+  .projects h1 {
+    font-size: 2.5rem;
+  }
+
+  .project .description {
+    width: 100%;
+  }
+
+  .projects .images {
+    width: 100%;
+  }
+
+  .projects .images .image img {
+    height: auto;
+  }
+
+  .projects .images p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects h1 {
+    font-size: 2.2rem;
+  }
+
+  .projects .images .image img {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 328px) {
+  .projects {
+    margin: 7rem auto;
+    padding: 0 3.125rem;
+    width: 65%;
+  }
+}
