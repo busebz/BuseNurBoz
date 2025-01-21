@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   margin: 4vw 0;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .right p {
-  font-size: 1rem;
+  font-size: 1.08rem;
   color: rgb(76, 76, 76);
 }
 
@@ -127,11 +127,11 @@
   }
 
   .right h4 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .right p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .circles {
@@ -163,15 +163,15 @@
   }
 
   .right h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .right h4 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .right p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .circle1,
@@ -202,11 +202,11 @@
   }
 
   .right h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .right p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .circle1,
