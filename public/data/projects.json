@@ -77,6 +77,18 @@
   },
   {
     "id": "5",
+    "title": "The Shopping Hub",
+    "description": {
+      "part1": "In my personal project The Shopping Hub, I developed a responsive e-commerce website using React.js, TypeScript, and CSS, with product data dynamically fetched from MongoDB via Mongoose. I implemented a custom global state management system using React Context API and useReducer to manage cart actions such as adding, removing, updating quantity, and order submission. The cart displays the total item count and calculates the overall price, demonstrating my skills in scalable state management, API integration, and building modular, maintainable React applications.",
+      "part2": ""
+    },
+    "projectLink": "https://github.com/busebz/The-Shopping-Hub",
+    "siteLink": "https://theshoppinghub.netlify.app/",
+    "images": ["images/Project5.1.png", "images/Project5.2.png", "images/Project5.3.png"],
+    "mobileImages": ""
+  },
+  {
+    "id": "6",
     "title": "Snake Game",
     "description": {
       "part1": "I developed a Snake Game using C# and Windows Forms. In this game, the player controls the snake, making it grow each time it eats a piece of food, which adds 10 points to the score. The game includes a timer that tracks the elapsed time, and if the snake collides with the wall, the game ends. After the game is over, the player can restart by pressing the 'R' key.",
@@ -84,7 +96,7 @@
     },
     "projectLink": "https://github.com/busebz/SnakeGame",
     "siteLink": "",
-    "images": ["images/Project5.1.png", "images/Project5.2.png"],
+    "images": ["images/Project6.1.png", "images/Project6.2.png"],
     "mobileImages": ""
   }
 ]
