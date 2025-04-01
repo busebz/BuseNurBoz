@@ -86,17 +86,5 @@
     "siteLink": "https://theshoppinghub.netlify.app/",
     "images": ["images/Project5.1.png", "images/Project5.2.png", "images/Project5.3.png"],
     "mobileImages": ""
-  },
-  {
-    "id": "6",
-    "title": "Snake Game",
-    "description": {
-      "part1": "I developed a Snake Game using C# and Windows Forms. In this game, the player controls the snake, making it grow each time it eats a piece of food, which adds 10 points to the score. The game includes a timer that tracks the elapsed time, and if the snake collides with the wall, the game ends. After the game is over, the player can restart by pressing the 'R' key.",
-      "part2": ""
-    },
-    "projectLink": "https://github.com/busebz/SnakeGame",
-    "siteLink": "",
-    "images": ["images/Project6.1.png", "images/Project6.2.png"],
-    "mobileImages": ""
   }
 ]
