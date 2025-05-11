@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Smart Home System Web Panel",
     "description": {
-      "part1": "In my graduation project, I contributed to the development of an IoT-based Smart Home System by designing the admin panel. The panel allowed users to control devices remotely and administrators to monitor device statuses in real-time",
+      "part1": "In my graduation project, I contributed to the development of an IoT-based Smart Home System by designing the admin panel. The panel allowed administrators to monitor device statuses in real-time",
       "part2": "I built a dynamic, user-friendly interface using React.js, displaying real-time data and enabling remote control through RESTful APIs. My focus was on API integrations, state management, and creating a modular React.js architecture for a sustainable and scalable solution."
     },
     "projectLink": "https://github.com/busebz/Smart-Home-Systems",
@@ -18,7 +18,11 @@
       "images/Project1.5.jpg",
       "images/Project1.6.jpg",
       "images/Project1.7.jpg"
-    ]
+    ],
+    "loginInfo": {
+      "email": "admin@admin.com",
+      "password": "admin123"
+    }
   },
   {
     "id": "2",

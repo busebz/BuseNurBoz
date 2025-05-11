@@ -6,6 +6,7 @@ import classes from "./ProjectsPage.module.css";
 
 const Projects = ({ projects }) => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [openLoginInfoId, setOpenLoginInfoId] = useState(null);
 
   const sliderSettings = {
     dots: true,
@@ -27,6 +28,37 @@ const Projects = ({ projects }) => {
             <h2>{project.title}</h2>
             <p className={classes.text}>{project.description.part1}</p>
             <p className={classes.text}>{project.description.part2}</p>
+            {project.loginInfo && (
+              <>
+                <button
+                  className={classes.toggleLoginBtn}
+                  onClick={() =>
+                    setOpenLoginInfoId(
+                      openLoginInfoId === project.id ? null : project.id
+                    )
+                  }
+                >
+                  {openLoginInfoId === project.id
+                    ? "Hide Demo Login Info"
+                    : "Show Demo Login Info"}
+                </button>
+
+                {openLoginInfoId === project.id && (
+                  <div className={classes.loginInfoBox}>
+                    <strong>🛡️ Demo Login Info:</strong>
+                    <br />
+                    <strong>Email:</strong> {project.loginInfo.email}
+                    <br />
+                    <strong>Password:</strong> {project.loginInfo.password}
+                    <br />
+                    <em>
+                      This login is provided for demo purposes only. No data is
+                      stored.
+                    </em>
+                  </div>
+                )}
+              </>
+            )}
             <div className={classes.links}>
               <p>
                 Project Link:{" "}
@@ -55,7 +87,11 @@ const Projects = ({ projects }) => {
           <div className={classes.images}>
             <Slider {...sliderSettings}>
               {project.images.map((image, index) => (
-                <div key={index} className={classes.image} onClick={() => handleImageClick(`/${image}`)}>
+                <div
+                  key={index}
+                  className={classes.image}
+                  onClick={() => handleImageClick(`/${image}`)}
+                >
                   <img src={`/${image}`} alt={`${project.title}`} />
                 </div>
               ))}
@@ -63,13 +99,17 @@ const Projects = ({ projects }) => {
             {project.mobileImages && (
               <p>
                 Go to mobile versions:{" "}
-                <Link to={`/projects/${project.id}/mobileImages`}>Mobile versions</Link>
+                <Link to={`/projects/${project.id}/mobileImages`}>
+                  Mobile versions
+                </Link>
               </p>
             )}
           </div>
         </div>
       ))}
-      {selectedImage && <Modal imageSrc={selectedImage} onClose={handleCloseModal} />}
+      {selectedImage && (
+        <Modal imageSrc={selectedImage} onClose={handleCloseModal} />
+      )}
     </div>
   );
 };
