@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      const path = location.pathname.slice(1);
+      const search = location.search;
+      const hash = location.hash;
+      const newUrl = "/?/" + path + search + hash;
+      location.replace(newUrl);
+    </script>
+  </head>
+  <body></body>
+</html>
