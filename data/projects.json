@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Smart Home System Web Panel",
     "description": {
-      "part1": "In my graduation project, I contributed to the development of an IoT-based Smart Home System by designing the admin panel. The panel allowed users to control devices remotely and administrators to monitor device statuses in real-time",
+      "part1": "In my graduation project, I contributed to the development of an IoT-based Smart Home System by designing the admin panel. The panel allowed administrators to monitor device statuses in real-time",
       "part2": "I built a dynamic, user-friendly interface using React.js, displaying real-time data and enabling remote control through RESTful APIs. My focus was on API integrations, state management, and creating a modular React.js architecture for a sustainable and scalable solution."
     },
     "projectLink": "https://github.com/busebz/Smart-Home-Systems",
@@ -18,13 +18,17 @@
       "images/Project1.5.jpg",
       "images/Project1.6.jpg",
       "images/Project1.7.jpg"
-    ]
+    ],
+    "loginInfo": {
+      "email": "admin@admin.com",
+      "password": "admin123"
+    }
   },
   {
     "id": "2",
     "title": "Invoice Project",
     "description": {
-      "part1": "During my internship at Aras Kargo, I developed a comprehensive customer billing system using C# and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
+      "part1": "During my internship at Aras Kargo, I developed a comprehensive customer billing system using C#, Windows Forms, ADO.NET and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
       "part2": "Additionally, the system allowed for product and customer data to be exported to Excel for external data analysis. "
     },
     "projectLink": "https://github.com/busebz/Invoice-Project",
@@ -44,7 +48,7 @@
     "id": "3",
     "title": "Customer Invoicing System",
     "description": {
-      "part1": "During my internship at Aras Kargo, I developed a customer invoicing application using C# Windows Forms and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
+      "part1": "During my internship at Aras Kargo, I developed a customer invoicing application using C#, Windows Forms, ADO.NET and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
       "part2": "During the development of this project, I enhanced my technical skills by managing database operations with SQL Server, designing the user interface with C#, and implementing data export to Excel."
     },
     "projectLink": "https://github.com/busebz/Customer-Invoicing-System",
@@ -77,14 +81,14 @@
   },
   {
     "id": "5",
-    "title": "Snake Game",
+    "title": "The Shopping Hub",
     "description": {
-      "part1": "I developed a Snake Game using C# and Windows Forms. In this game, the player controls the snake, making it grow each time it eats a piece of food, which adds 10 points to the score. The game includes a timer that tracks the elapsed time, and if the snake collides with the wall, the game ends. After the game is over, the player can restart by pressing the 'R' key.",
+      "part1": "In my personal project The Shopping Hub, I developed a responsive e-commerce website using React.js, TypeScript, and CSS, with product data dynamically fetched from MongoDB via Mongoose. I implemented a custom global state management system using React Context API and useReducer to manage cart actions such as adding, removing, updating quantity, and order submission. The cart displays the total item count and calculates the overall price, demonstrating my skills in scalable state management, API integration, and building modular, maintainable React applications.",
       "part2": ""
     },
-    "projectLink": "https://github.com/busebz/SnakeGame",
-    "siteLink": "",
-    "images": ["images/Project5.1.png", "images/Project5.2.png"],
+    "projectLink": "https://github.com/busebz/The-Shopping-Hub",
+    "siteLink": "https://theshoppinghub.netlify.app/",
+    "images": ["images/Project5.1.png", "images/Project5.2.png", "images/Project5.3.png"],
     "mobileImages": ""
   }
 ]
