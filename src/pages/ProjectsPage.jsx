@@ -78,7 +78,7 @@ const Projects = ({ projects }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {project.siteLink}
+                    {project.siteLink.replace(/^https?:\/\//, "")}
                   </a>
                 </p>
               )}

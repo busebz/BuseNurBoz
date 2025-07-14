@@ -7,7 +7,7 @@
       "part2": "I built a dynamic, user-friendly interface using React.js, displaying real-time data and enabling remote control through RESTful APIs. My focus was on API integrations, state management, and creating a modular React.js architecture for a sustainable and scalable solution."
     },
     "projectLink": "https://github.com/busebz/Smart-Home-Systems",
-    "siteLink": "https://smarthomesystems.netlify.app/",
+    "siteLink": "https://smarthome.busenurboz.com",
     "images": [
       "images/Project1.1.png",
       "images/Project1.2.png",
@@ -87,7 +87,7 @@
       "part2": ""
     },
     "projectLink": "https://github.com/busebz/The-Shopping-Hub",
-    "siteLink": "https://theshoppinghub.netlify.app/",
+    "siteLink": "https://theshoppinghubstore.com",
     "images": ["images/Project5.1.png", "images/Project5.2.png", "images/Project5.3.png"],
     "mobileImages": ""
   }
