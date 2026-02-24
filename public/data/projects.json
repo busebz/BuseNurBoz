@@ -51,7 +51,7 @@
     "id": "3",
     "title": "Employee Tracking System",
     "description": {
-      "part1": "During my internship at Aras Kargo, I developed an employee tracking system using ASP.NET Core MVC, SQL Server, and Entity Framework. The application allows admins to manage employee data, including personal details, position, salary, and email. On the main page, admins can view the employee list and update or delete information.",
+      "part1": "I developed an employee tracking system using ASP.NET Core MVC, SQL Server, and Entity Framework. The application allows admins to manage employee data, including personal details, position, salary, and email. On the main page, admins can view the employee list and update or delete information.",
       "part2": "Additionally, the application includes an 'Add Employee' page for adding new employees, and each employee has a detailed page for further management. The system's intuitive interface and seamless database integration ensure efficient and accurate tracking of employee data."
     },
     "projectLink": "https://github.com/busebz/Employee-Tracking-System",
@@ -69,7 +69,7 @@
     "id": "4",
     "title": "Invoice Project",
     "description": {
-      "part1": "During my internship at Aras Kargo, I developed a comprehensive customer billing system using C#, Windows Forms, ADO.NET and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
+      "part1": "During my internship, I developed a comprehensive customer billing system using C#, Windows Forms, ADO.NET and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
       "part2": "Additionally, the system allowed for product and customer data to be exported to Excel for external data analysis."
     },
     "projectLink": "https://github.com/busebz/Invoice-Project",
@@ -89,7 +89,7 @@
     "id": "5",
     "title": "Customer Invoicing System",
     "description": {
-      "part1": "During my internship at Aras Kargo, I developed a customer invoicing application using C#, Windows Forms, ADO.NET and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
+      "part1": "During my internship, I developed a customer invoicing application using C#, Windows Forms, ADO.NET and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
       "part2": "During the development of this project, I enhanced my technical skills by managing database operations with SQL Server, designing the user interface with C#, and implementing data export to Excel."
     },
     "projectLink": "https://github.com/busebz/Customer-Invoicing-System",
