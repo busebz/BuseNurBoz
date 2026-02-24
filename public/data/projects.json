@@ -1,23 +1,46 @@
 [
   {
     "id": "1",
+    "title": "The Shopping Hub",
+    "description": {
+      "part1": "In my personal project The Shopping Hub, I built a responsive full-stack e-commerce website using React.js, TypeScript, and CSS, with a backend developed in Node.js and Express.js. I created RESTful APIs and managed data with MongoDB and Mongoose. The application includes authentication, cart and order management, order history, and profile update features, with global state handled using React Context API and useReducer.",
+      "part2": "It also features a role-based admin panel where admins can log in and view a dashboard showing total products, users, orders, and the latest orders, demonstrating protected routes and role-based access control."
+    },
+    "projectLink": "https://github.com/busebz/The-Shopping-Hub",
+    "siteLink": "https://theshoppinghubstore.com",
+    "images": [
+      "images/shopping-hub/1.png",
+      "images/shopping-hub/2.png",
+      "images/shopping-hub/3.png",
+      "images/shopping-hub/4.png",
+      "images/shopping-hub/5.png",
+      "images/shopping-hub/6.png",
+      "images/shopping-hub/7.png",
+      "images/shopping-hub/8.png",
+      "images/shopping-hub/9.png",
+      "images/shopping-hub/10.png"
+    ],
+    "mobileImages": ""
+  },
+  {
+    "id": "2",
     "title": "Smart Home System Web Panel",
     "description": {
-      "part1": "In my graduation project, I contributed to the development of an IoT-based Smart Home System by designing the admin panel. The panel allowed administrators to monitor device statuses in real-time",
-      "part2": "I built a dynamic, user-friendly interface using React.js, displaying real-time data and enabling remote control through RESTful APIs. My focus was on API integrations, state management, and creating a modular React.js architecture for a sustainable and scalable solution."
+      "part1": "In my graduation project, I designed and developed the admin panel of a Smart Home System web application. The panel enables administrators to monitor device statuses and manage system data through a centralized interface.",
+      "part2": "I built a dynamic and user-friendly interface using React.js, integrating RESTful APIs to fetch and manage data. I focused on state management, component-based architecture, and building a modular and maintainable React application."
     },
     "projectLink": "https://github.com/busebz/Smart-Home-Systems",
     "siteLink": "https://smarthome.busenurboz.com",
     "images": [
-      "images/Project1.1.png",
-      "images/Project1.2.png",
-      "images/Project1.3.png"
+      "images/smart-home/1.png",
+      "images/smart-home/2.png",
+      "images/smart-home/3.png"
     ],
     "mobileImages": [
-      "images/Project1.4.jpg",
-      "images/Project1.5.jpg",
-      "images/Project1.6.jpg",
-      "images/Project1.7.jpg"
+      "images/smart-home/mobil-1.jpg",
+      "images/smart-home/mobil-2.jpg",
+      "images/smart-home/mobil-3.jpg",
+      "images/smart-home/mobil-4.jpg"
     ],
     "loginInfo": {
       "email": "admin@admin.com",
@@ -25,44 +48,7 @@
     }
   },
   {
-    "id": "2",
-    "title": "Invoice Project",
-    "description": {
-      "part1": "During my internship at Aras Kargo, I developed a comprehensive customer billing system using C#, Windows Forms, ADO.NET and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
-      "part2": "Additionally, the system allowed for product and customer data to be exported to Excel for external data analysis. "
-    },
-    "projectLink": "https://github.com/busebz/Invoice-Project",
-    "siteLink": "",
-    "images": [
-      "images/Project2.1.png",
-      "images/Project2.2.png",
-      "images/Project2.1.png",
-      "images/Project2.4.png",
-      "images/Project2.5.png",
-      "images/Project2.6.png",
-      "images/Project2.7.png"
-    ],
-    "mobileImages": ""
-  },
-  {
     "id": "3",
-    "title": "Customer Invoicing System",
-    "description": {
-      "part1": "During my internship at Aras Kargo, I developed a customer invoicing application using C#, Windows Forms, ADO.NET and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
-      "part2": "During the development of this project, I enhanced my technical skills by managing database operations with SQL Server, designing the user interface with C#, and implementing data export to Excel."
-    },
-    "projectLink": "https://github.com/busebz/Customer-Invoicing-System",
-    "siteLink": "",
-    "images": [
-      "images/Project3.1.png",
-      "images/Project3.2.png",
-      "images/Project3.3.png",
-      "images/Project3.4.png"
-    ],
-    "mobileImages": ""
-  },
-  {
-    "id": "4",
     "title": "Employee Tracking System",
     "description": {
       "part1": "During my internship at Aras Kargo, I developed an employee tracking system using ASP.NET Core MVC, SQL Server, and Entity Framework. The application allows admins to manage employee data, including personal details, position, salary, and email. On the main page, admins can view the employee list and update or delete information.",
@@ -71,24 +57,49 @@
     "projectLink": "https://github.com/busebz/Employee-Tracking-System",
     "siteLink": "",
     "images": [
-      "images/Project4.1.png",
-      "images/Project4.2.png",
-      "images/Project4.3.png",
-      "images/Project4.4.png",
-      "images/Project4.5.png"
+      "images/employee-tracking/1.png",
+      "images/employee-tracking/2.png",
+      "images/employee-tracking/3.png",
+      "images/employee-tracking/4.png",
+      "images/employee-tracking/5.png"
+    ],
+    "mobileImages": ""
+  },
+  {
+    "id": "4",
+    "title": "Invoice Project",
+    "description": {
+      "part1": "During my internship at Aras Kargo, I developed a comprehensive customer billing system using C#, Windows Forms, ADO.NET and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
+      "part2": "Additionally, the system allowed for product and customer data to be exported to Excel for external data analysis."
+    },
+    "projectLink": "https://github.com/busebz/Invoice-Project",
+    "siteLink": "",
+    "images": [
+      "images/invoice-project/1.png",
+      "images/invoice-project/2.png",
+      "images/invoice-project/3.png",
+      "images/invoice-project/4.png",
+      "images/invoice-project/5.png",
+      "images/invoice-project/6.png",
+      "images/invoice-project/7.png"
     ],
     "mobileImages": ""
   },
   {
     "id": "5",
-    "title": "The Shopping Hub",
+    "title": "Customer Invoicing System",
     "description": {
-      "part1": "In my personal project The Shopping Hub, I developed a responsive e-commerce website using React.js, TypeScript, and CSS, with product data dynamically fetched from MongoDB via Mongoose. I implemented a custom global state management system using React Context API and useReducer to manage cart actions such as adding, removing, updating quantity, and order submission. The cart displays the total item count and calculates the overall price, demonstrating my skills in scalable state management, API integration, and building modular, maintainable React applications.",
-      "part2": ""
+      "part1": "During my internship at Aras Kargo, I developed a customer invoicing application using C#, Windows Forms, ADO.NET and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
+      "part2": "During the development of this project, I enhanced my technical skills by managing database operations with SQL Server, designing the user interface with C#, and implementing data export to Excel."
     },
-    "projectLink": "https://github.com/busebz/The-Shopping-Hub",
-    "siteLink": "https://theshoppinghubstore.com",
-    "images": ["images/Project5.1.png", "images/Project5.2.png", "images/Project5.3.png"],
+    "projectLink": "https://github.com/busebz/Customer-Invoicing-System",
+    "siteLink": "",
+    "images": [
+      "images/customer-invoicing/1.png",
+      "images/customer-invoicing/2.png",
+      "images/customer-invoicing/3.png",
+      "images/customer-invoicing/4.png"
+    ],
     "mobileImages": ""
   }
 ]
