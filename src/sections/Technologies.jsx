@@ -17,7 +17,6 @@ import {
   SiPostman,
 } from "react-icons/si";
 
-import { FaJava } from "react-icons/fa";
 import { VscAzureDevops } from "react-icons/vsc";
 import { DiMsqlServer } from "react-icons/di";
 

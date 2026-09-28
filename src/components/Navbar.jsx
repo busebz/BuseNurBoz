@@ -2,18 +2,18 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import classes from "./Navbar.module.css";
 
+const navItems = [
+  { label: "About", id: "about" },
+  { label: "Projects", id: "projects" },
+  { label: "Technologies", id: "technologies" },
+  { label: "Contact", id: "contact" },
+];
+
 function Navbar() {
   const [activeSection, setActiveSection] = useState("about");
 
   const location = useLocation();
   const navigate = useNavigate();
-
-  const navItems = [
-    { label: "About", id: "about" },
-    { label: "Projects", id: "projects" },
-    { label: "Technologies", id: "technologies" },
-    { label: "Contact", id: "contact" },
-  ];
 
   useEffect(() => {
     if (location.pathname !== "/") return;
@@ -108,8 +108,9 @@ function Navbar() {
                 key={item.id}
                 type="button"
                 onClick={() => handleNavigation(item.id)}
-                className={`${classes.navItem} ${activeSection === item.id ? classes.active : ""
-                  }`}
+                className={`${classes.navItem} ${
+                  activeSection === item.id ? classes.active : ""
+                }`}
               >
                 {item.label}
               </button>
