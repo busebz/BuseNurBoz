@@ -1,0 +1,1512 @@
+.projectDetail {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  color: #ffffff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 92%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 8px 0 55px;
+  box-sizing: border-box;
+}
+
+/* BACK */
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 30px 45px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #c2c8d2;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+  transform: translateX(10px);
+}
+
+.backButton:hover {
+  color: #ffffff;
+  transform: translateX(-3px);
+}
+
+.backArrow,
+.backArrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.backArrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #55c9eb;
+}
+
+.backText {
+  line-height: 20px;
+}
+
+/* LAYOUT */
+
+.content {
+  width: calc(100% - 90px);
+  margin: 0 45px;
+  display: grid;
+  grid-template-columns: minmax(0, 46%) minmax(0, 50%);
+  gap: 4%;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+/* PROJECT INFO */
+
+.projectInfo {
+  width: 100%;
+  min-width: 0;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.projectInfo h1 {
+  max-width: 650px;
+  margin: 0;
+  color: #f5f6f9;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+.description {
+  width: 100%;
+  max-width: 570px;
+  margin-top: 20px;
+}
+
+.description p {
+  margin: 0 0 13px;
+  color: #b7bdc9;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+/* ACTION AREA */
+
+.actionArea {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: auto;
+  max-width: 100%;
+  margin-top: 22px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 14px;
+}
+
+/* BUTTONS */
+
+.actionButton {
+  min-height: 52px;
+  padding: 0 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 1px solid rgba(128, 153, 196, 0.3);
+  border-radius: 14px;
+  color: #f4f7f9;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.actionButton:hover {
+  transform: translateY(-2px);
+}
+
+.githubButton {
+  background: #31577f;
+  border-color: #527aa4;
+}
+
+.githubButton:hover {
+  background: #3b668f;
+  border-color: #6690b9;
+}
+
+.liveButton {
+  background: rgba(13, 24, 42, 0.45);
+  border-color: rgba(110, 145, 195, 0.5);
+}
+
+.liveButton:hover {
+  background: rgba(27, 48, 82, 0.7);
+  border-color: rgba(110, 148, 207, 0.8);
+}
+
+.githubIcon,
+.webIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.externalIcon {
+  margin-left: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* DEMO LOGIN */
+
+.loginInfo {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(110, 145, 195, 0.32);
+  border-radius: 14px;
+  background: rgba(8, 20, 37, 0.5);
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.loginInfo:hover {
+  border-color: rgba(110, 148, 207, 0.6);
+}
+
+.loginInfoOpen {
+  background: rgba(8, 20, 37, 0.68);
+}
+
+.loginToggle {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.loginMainIcon,
+.loginChevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginMainIcon {
+  color: #b8cadb;
+}
+
+.loginToggleTitle {
+  color: #f0f3f7;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.loginChevron {
+  margin-left: auto;
+  color: #b6c6d6;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.loginChevronOpen {
+  transform: rotate(180deg);
+}
+
+.loginContent {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.3s ease,
+    opacity 0.22s ease;
+}
+
+.loginContentOpen {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.loginContentInner {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+  align-items: center;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.loginContentOpen .loginContentInner {
+  padding: 14px 0 17px;
+  border-top: 1px solid rgba(128, 153, 196, 0.14);
+}
+
+.credentialItem {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.credentialItem:last-child {
+  padding-left: 20px;
+}
+
+.credentialIcon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(49, 87, 127, 0.4);
+  color: #cbd9e6;
+}
+
+.credentialText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.credentialText span {
+  color: #899bb0;
+  font-size: 0.72rem;
+}
+
+.credentialText p {
+  margin: 0;
+  color: #e5e9ef;
+  font-size: 0.83rem;
+  font-weight: 500;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.credentialDivider {
+  width: 1px;
+  height: 36px;
+  background: rgba(128, 153, 196, 0.22);
+}
+
+/* GALLERY */
+
+.galleryArea {
+  width: 100%;
+  max-width: 650px;
+  min-width: 0;
+  justify-self: end;
+}
+
+.galleryCard {
+  width: 100%;
+  padding: 17px 17px 18px;
+  border: 1px solid rgba(92, 150, 190, 0.27);
+  border-radius: 18px;
+  background: rgba(8, 21, 38, 0.34);
+  box-sizing: border-box;
+}
+
+.mainImageArea,
+.mainImageWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.mainImageWrapper {
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.mainImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+}
+
+.mainImageArrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  border: 1px solid rgba(122, 193, 224, 0.75);
+  border-radius: 50%;
+  outline: none;
+  background: #091c30;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.mainImageArrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.mainImageArrow:hover {
+  transform: translateY(-50%) scale(1.06);
+  background: #163b58;
+  border-color: #62d0ef;
+}
+
+.mainImageArrowLeft {
+  left: -32px;
+}
+
+.mainImageArrowRight {
+  right: -32px;
+}
+
+.thumbnailSection {
+  position: relative;
+  width: 100%;
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnailGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.thumbnailButton {
+  position: relative;
+  width: 100%;
+  padding: 2px;
+  overflow: hidden;
+  border: 1px solid rgba(120, 150, 190, 0.22);
+  border-radius: 9px;
+  outline: none;
+  background: rgba(12, 26, 44, 0.55);
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 0.72;
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.thumbnailButton:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  border-color: rgba(81, 202, 239, 0.65);
+}
+
+.thumbnailButton img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+}
+
+.activeThumbnail {
+  opacity: 1;
+  border-color: #51caef;
+  box-shadow: 0 0 0 1px #51caef;
+}
+
+.galleryDots {
+  width: 100%;
+  min-height: 23px;
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.galleryDot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #42536c;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.galleryDot:hover {
+  background: #71839b;
+}
+
+.activeGalleryDot {
+  background: #51caef;
+  box-shadow: 0 0 9px rgba(81, 202, 239, 0.35);
+  transform: scale(1.18);
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1450px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .backButton {
+    gap: 10px;
+    font-size: 1.08rem;
+  }
+
+  .backArrow,
+  .backArrow svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .backText {
+    line-height: 22px;
+  }
+
+  .content {
+    width: calc(100% - 96px);
+    margin: 0 48px;
+  }
+
+  .projectInfo {
+    padding-left: 11px;
+  }
+
+  .projectInfo h1 {
+    max-width: 700px;
+    font-size: 3.45rem;
+  }
+
+  .description {
+    max-width: 615px;
+    margin-top: 22px;
+  }
+
+  .description p {
+    font-size: 1.13rem;
+    line-height: 1.58;
+  }
+
+  .actionArea {
+    margin-top: 24px;
+  }
+
+  .actions {
+    gap: 15px;
+  }
+
+  .actionButton {
+    min-height: 56px;
+    padding: 0 37px;
+    font-size: 0.99rem;
+  }
+
+  .githubIcon,
+  .webIcon {
+    font-size: 1.34rem;
+  }
+
+  .externalIcon {
+    font-size: 1.08rem;
+  }
+
+  .loginInfo {
+    margin-top: 22px;
+  }
+
+  .loginToggle {
+    min-height: 54px;
+    padding: 0 22px;
+  }
+
+  .loginToggleTitle {
+    font-size: 0.95rem;
+  }
+
+  .loginChevron {
+    font-size: 1.29rem;
+  }
+
+  .loginContentInner {
+    margin: 0 22px;
+  }
+
+  .credentialIcon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .credentialText span {
+    font-size: 0.78rem;
+  }
+
+  .credentialText p {
+    font-size: 0.9rem;
+  }
+
+  .credentialDivider {
+    height: 39px;
+  }
+
+  .galleryArea {
+    max-width: 700px;
+  }
+
+  .galleryCard {
+    padding: 18px 18px 19px;
+  }
+
+  .mainImageArrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .mainImageArrow svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .thumbnailGrid {
+    gap: 10px;
+  }
+
+  .galleryDots {
+    gap: 9px;
+  }
+
+  .galleryDot {
+    width: 9px;
+    height: 9px;
+    flex-basis: 9px;
+  }
+}
+
+/* LARGE DESKTOP 2 */
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1650px;
+  }
+
+  .backButton {
+    font-size: 1.13rem;
+  }
+
+  .backArrow,
+  .backArrow svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .backText {
+    line-height: 23px;
+  }
+
+  .content {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+  }
+
+  .projectInfo {
+    padding-left: 12px;
+  }
+
+  .projectInfo h1 {
+    max-width: 730px;
+    font-size: 3.6rem;
+  }
+
+  .description {
+    max-width: 640px;
+    margin-top: 23px;
+  }
+
+  .description p {
+    font-size: 1.18rem;
+    line-height: 1.6;
+  }
+
+  .actionArea {
+    margin-top: 25px;
+  }
+
+  .actionButton {
+    min-height: 58px;
+    padding: 0 39px;
+    font-size: 1.03rem;
+  }
+
+  .githubIcon,
+  .webIcon {
+    font-size: 1.4rem;
+  }
+
+  .externalIcon {
+    font-size: 1.12rem;
+  }
+
+  .loginToggle {
+    min-height: 56px;
+  }
+
+  .loginToggleTitle {
+    font-size: 0.99rem;
+  }
+
+  .loginChevron {
+    font-size: 1.34rem;
+  }
+
+  .credentialIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .credentialText span {
+    font-size: 0.81rem;
+  }
+
+  .credentialText p {
+    font-size: 0.94rem;
+  }
+
+  .credentialDivider {
+    height: 41px;
+  }
+
+  .galleryArea {
+    max-width: 730px;
+  }
+
+  .galleryCard {
+    padding: 19px 19px 20px;
+  }
+
+  .mainImageArrow {
+    width: 47px;
+    height: 47px;
+  }
+
+  .mainImageArrow svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* LARGE DESKTOP 3 */
+
+@media screen and (min-width: 1700px) {
+  .container {
+    max-width: 1700px;
+  }
+
+  .backButton {
+    font-size: 1.16rem;
+  }
+
+  .backArrow,
+  .backArrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .backText {
+    line-height: 24px;
+  }
+
+  .content {
+    width: calc(100% - 104px);
+    margin: 0 52px;
+  }
+
+  .projectInfo {
+    padding-left: 12px;
+  }
+
+  .projectInfo h1 {
+    max-width: 750px;
+    font-size: 3.69rem;
+  }
+
+  .description {
+    max-width: 660px;
+    margin-top: 24px;
+  }
+
+  .description p {
+    font-size: 1.24rem;
+    line-height: 1.61;
+  }
+
+  .actionArea {
+    margin-top: 26px;
+  }
+
+  .actionButton {
+    min-height: 59px;
+    padding: 0 40px;
+    font-size: 1.06rem;
+  }
+
+  .githubIcon,
+  .webIcon {
+    font-size: 1.43rem;
+  }
+
+  .externalIcon {
+    font-size: 1.15rem;
+  }
+
+  .loginToggle {
+    min-height: 57px;
+  }
+
+  .loginToggleTitle {
+    font-size: 1.02rem;
+  }
+
+  .loginChevron {
+    font-size: 1.37rem;
+  }
+
+  .credentialIcon {
+    width: 37px;
+    height: 37px;
+  }
+
+  .credentialText span {
+    font-size: 0.83rem;
+  }
+
+  .credentialText p {
+    font-size: 0.96rem;
+  }
+
+  .credentialDivider {
+    height: 42px;
+  }
+
+  .galleryArea {
+    max-width: 750px;
+  }
+
+  .galleryCard {
+    padding: 20px 20px 21px;
+  }
+
+  .mainImageArrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mainImageArrow svg {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+/* LARGE DESKTOP 4 */
+
+@media screen and (min-width: 1800px) {
+  .backButton {
+    font-size: 1.18rem;
+  }
+
+  .backArrow,
+  .backArrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .backText {
+    line-height: 24px;
+  }
+
+  .content {
+    width: calc(100% - 106px);
+    margin: 0 53px;
+  }
+
+  .projectInfo {
+    padding-left: 13px;
+  }
+
+  .projectInfo h1 {
+    max-width: 765px;
+    font-size: 3.75rem;
+  }
+
+  .description {
+    max-width: 675px;
+    margin-top: 24px;
+  }
+
+  .description p {
+    font-size: 1.23rem;
+    line-height: 1.62;
+  }
+
+  .actionArea {
+    margin-top: 27px;
+  }
+
+  .actionButton {
+    min-height: 60px;
+    padding: 0 41px;
+    font-size: 1.08rem;
+  }
+
+  .githubIcon,
+  .webIcon {
+    font-size: 1.45rem;
+  }
+
+  .externalIcon {
+    font-size: 1.17rem;
+  }
+
+  .loginToggle {
+    min-height: 58px;
+  }
+
+  .loginToggleTitle {
+    font-size: 1.04rem;
+  }
+
+  .loginChevron {
+    font-size: 1.39rem;
+  }
+
+  .credentialText span {
+    font-size: 0.85rem;
+  }
+
+  .credentialText p {
+    font-size: 0.98rem;
+  }
+
+  .galleryArea {
+    max-width: 765px;
+  }
+
+  .galleryCard {
+    padding: 20px 20px 21px;
+  }
+
+  .mainImageArrow {
+    width: 49px;
+    height: 49px;
+  }
+}
+
+/* VERY WIDE */
+
+@media screen and (min-width: 2000px) {
+  .container {
+    max-width: 1800px;
+  }
+
+  .backButton {
+    font-size: 1.2rem;
+  }
+
+  .backArrow,
+  .backArrow svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .backText {
+    line-height: 25px;
+  }
+
+  .content {
+    width: calc(100% - 110px);
+    margin: 0 55px;
+  }
+
+  .projectInfo {
+    padding-left: 14px;
+  }
+
+  .projectInfo h1 {
+    max-width: 785px;
+    font-size: 3.82rem;
+  }
+
+  .description {
+    max-width: 695px;
+    margin-top: 25px;
+  }
+
+  .description p {
+    font-size: 1.25rem;
+    line-height: 1.63;
+  }
+
+  .actionArea {
+    margin-top: 28px;
+  }
+
+  .actionButton {
+    min-height: 61px;
+    padding: 0 42px;
+    font-size: 1.1rem;
+  }
+
+  .githubIcon,
+  .webIcon {
+    font-size: 1.48rem;
+  }
+
+  .externalIcon {
+    font-size: 1.19rem;
+  }
+
+  .loginToggle {
+    min-height: 59px;
+  }
+
+  .loginToggleTitle {
+    font-size: 1.06rem;
+  }
+
+  .loginChevron {
+    font-size: 1.42rem;
+  }
+
+  .credentialText span {
+    font-size: 0.87rem;
+  }
+
+  .credentialText p {
+    font-size: 1rem;
+  }
+
+  .galleryArea {
+    max-width: 785px;
+  }
+
+  .galleryCard {
+    padding: 21px 21px 22px;
+  }
+
+  .mainImageArrow {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .container {
+    max-width: 1900px;
+  }
+
+  .backButton {
+    font-size: 1.22rem;
+  }
+
+  .backArrow,
+  .backArrow svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .backText {
+    line-height: 25px;
+  }
+
+  .content {
+    width: calc(100% - 112px);
+    margin: 0 56px;
+  }
+
+  .projectInfo {
+    padding-left: 14px;
+  }
+
+  .projectInfo h1 {
+    max-width: 800px;
+    font-size: 3.87rem;
+  }
+
+  .description {
+    max-width: 710px;
+  }
+
+  .description p {
+    font-size: 1.27rem;
+    line-height: 1.64;
+  }
+
+  .actionButton {
+    min-height: 62px;
+    padding: 0 43px;
+    font-size: 1.12rem;
+  }
+
+  .githubIcon,
+  .webIcon {
+    font-size: 1.5rem;
+  }
+
+  .externalIcon {
+    font-size: 1.21rem;
+  }
+
+  .loginToggle {
+    min-height: 60px;
+  }
+
+  .loginToggleTitle {
+    font-size: 1.08rem;
+  }
+
+  .loginChevron {
+    font-size: 1.44rem;
+  }
+
+  .credentialText span {
+    font-size: 0.88rem;
+  }
+
+  .credentialText p {
+    font-size: 1.02rem;
+  }
+
+  .galleryArea {
+    max-width: 800px;
+  }
+
+  .mainImageArrow {
+    width: 51px;
+    height: 51px;
+  }
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 94%;
+    max-width: none;
+  }
+
+  .backButton {
+    margin-left: 20px;
+  }
+
+  .content {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    grid-template-columns: minmax(0, 47%) minmax(0, 49%);
+    gap: 4%;
+  }
+
+  .projectInfo {
+    padding-left: 5px;
+  }
+
+  .projectInfo h1 {
+    font-size: 3.1rem;
+  }
+
+  .description {
+    max-width: 560px;
+  }
+
+  .description p {
+    font-size: 1.03rem;
+    line-height: 1.6;
+  }
+
+  .actionButton {
+    min-height: 50px;
+    padding: 0 27px;
+    font-size: 0.9rem;
+  }
+
+  .galleryArea {
+    max-width: 610px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 94%;
+  }
+
+  .projectInfo h1 {
+    font-size: 3rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .actions {
+    gap: 11px;
+  }
+
+  .actionButton {
+    padding: 0 22px;
+    font-size: 0.86rem;
+  }
+
+  .galleryArea {
+    max-width: 570px;
+  }
+
+  .mainImageArrow {
+    width: 39px;
+    height: 39px;
+  }
+
+  .mainImageArrowLeft {
+    left: -27px;
+  }
+
+  .mainImageArrowRight {
+    right: -27px;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 850px) {
+  .projectDetail {
+    min-height: auto;
+  }
+
+  .container {
+    width: 88%;
+    padding: 35px 0 80px;
+  }
+
+  .backButton {
+    margin-left: 0;
+    margin-bottom: 36px;
+    font-size: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .projectInfo {
+    padding-left: 0;
+  }
+
+  .projectInfo h1 {
+    max-width: 700px;
+    font-size: 3.5rem;
+  }
+
+  .description {
+    max-width: 680px;
+    margin-top: 24px;
+  }
+
+  .description p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .actionArea {
+    margin-top: 25px;
+  }
+
+  .actionButton {
+    min-height: 54px;
+    padding: 0 30px;
+    font-size: 0.94rem;
+  }
+
+  .galleryArea {
+    width: 100%;
+    max-width: 650px;
+    justify-self: start;
+  }
+
+  .mainImageArrowLeft {
+    left: -19px;
+  }
+
+  .mainImageArrowRight {
+    right: -19px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+    padding: 30px 0 70px;
+  }
+
+  .backButton {
+    margin-bottom: 32px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .projectInfo h1 {
+    font-size: 3.2rem;
+  }
+
+  .description {
+    max-width: 100%;
+    margin-top: 22px;
+  }
+
+  .description p {
+    font-size: 1.03rem;
+  }
+
+  .actionArea {
+    width: 100%;
+  }
+
+  .actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .actionButton {
+    width: 100%;
+    min-width: 0;
+    min-height: 54px;
+    padding: 0 12px;
+    font-size: 0.94rem;
+  }
+
+  .galleryArea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .galleryCard {
+    padding: 12px 12px 13px;
+    border-radius: 14px;
+  }
+
+  .mainImageWrapper {
+    border-radius: 8px;
+  }
+
+  .mainImageArrow {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mainImageArrow svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mainImageArrowLeft {
+    left: -15px;
+  }
+
+  .mainImageArrowRight {
+    right: -15px;
+  }
+
+  .thumbnailSection {
+    margin-top: 8px;
+  }
+
+  .thumbnailGrid {
+    gap: 6px;
+  }
+
+  .thumbnailButton {
+    padding: 2px;
+    border-radius: 7px;
+  }
+
+  .thumbnailButton img {
+    border-radius: 5px;
+  }
+
+  .galleryDots {
+    min-height: 20px;
+    margin-top: 7px;
+    gap: 6px;
+  }
+
+  .galleryDot {
+    width: 7px;
+    height: 7px;
+    flex-basis: 7px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    padding: 25px 0 65px;
+  }
+
+  .projectInfo h1 {
+    font-size: 2.9rem;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+
+  .loginContentInner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .credentialItem:last-child {
+    padding-left: 0;
+  }
+
+  .credentialDivider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .thumbnailGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .galleryDots {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 91%;
+    padding: 22px 0 60px;
+  }
+
+  .projectInfo h1 {
+    font-size: 2.65rem;
+  }
+
+  .description p {
+    font-size: 0.97rem;
+  }
+
+  .mainImageArrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .mainImageArrowLeft {
+    left: -13px;
+  }
+
+  .mainImageArrowRight {
+    right: -13px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    width: 92%;
+  }
+
+  .projectInfo h1 {
+    font-size: 2.45rem;
+  }
+
+  .description p {
+    font-size: 0.94rem;
+  }
+
+  .actionButton {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "the-shopping-hub",
+    "title": "The Shopping Hub",
+    "description": "A full-stack e-commerce platform built with React, TypeScript and Node.js. Includes authentication, product management, cart, orders and a role-based admin panel.",
+    "image": "images/shopping-hub/1.png",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "smart-home",
+    "title": "Smart Home System Web Panel",
+    "description": "A smart home management web panel for monitoring device statuses and managing system data through a centralized interface.",
+    "image": "images/smart-home/1.png",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "REST API"
+    ]
+  },
+  {
+    "id": "employee-tracking-system",
+    "title": "Employee Tracking System",
+    "description": "A web-based employee tracking application for managing employee information with an ASP.NET Core MVC and SQL Server backend.",
+    "image": "images/employee-tracking/1.png",
+    "technologies": [
+      "ASP.NET Core",
+      "MVC",
+      "C#",
+      "SQL Server"
+    ]
+  },
+  {
+    "id": "invoice-project",
+    "title": "Invoice Project",
+    "description": "A customer billing system with customer, product and invoice management, automatic invoice generation and Excel export.",
+    "image": "images/invoice-project/2.png",
+    "technologies": [
+      "C#",
+      "Windows Forms",
+      "ADO.NET",
+      "SQL Server"
+    ]
+  },
+  {
+    "id": "customer-invoicing-system",
+    "title": "Customer Invoicing System",
+    "description": "A customer invoicing application with invoice management, currency calculations and Excel export functionality.",
+    "image": "images/customer-invoicing/1.png",
+    "technologies": [
+      "C#",
+      "Windows Forms",
+      "ADO.NET",
+      "SQL Server"
+    ]
+  }
+]

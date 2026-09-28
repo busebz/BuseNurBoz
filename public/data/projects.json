@@ -1,10 +1,9 @@
 [
   {
-    "id": "1",
+    "id": "the-shopping-hub",
     "title": "The Shopping Hub",
     "description": {
-      "part1": "In my personal project The Shopping Hub, I built a responsive full-stack e-commerce website using React.js, TypeScript, and CSS, with a backend developed in Node.js and Express.js. I created RESTful APIs and managed data with MongoDB and Mongoose. The application includes authentication, cart and order management, order history, and profile update features, with global state handled using React Context API and useReducer.",
-      "part2": "It also features a role-based admin panel where admins can log in and view a dashboard showing total products, users, orders, and the latest orders, demonstrating protected routes and role-based access control."
+      "part1": "In my personal project, The Shopping Hub, I developed a full-stack e-commerce website using React.js, TypeScript, Node.js, Express.js, and MongoDB. The application includes user authentication, product search, shopping cart, order management, order history, and profile management. It also features a role-based admin panel for managing products, users, and orders, along with a dashboard that provides an overview of store activity. RESTful APIs handle communication between the frontend and backend, while MongoDB is used for data management."
     },
     "projectLink": "https://github.com/busebz/The-Shopping-Hub",
     "siteLink": "https://theshoppinghubstore.com",
@@ -20,27 +19,25 @@
       "images/shopping-hub/9.png",
       "images/shopping-hub/10.png"
     ],
-    "mobileImages": ""
+    "loginInfo": {
+      "email": "admin@admin.com",
+      "password": "Admin123"
+    }
   },
   {
-    "id": "2",
+    "id": "smart-home",
     "title": "Smart Home System Web Panel",
     "description": {
-      "part1": "In my graduation project, I designed and developed the admin panel of a Smart Home System web application. The panel enables administrators to monitor device statuses and manage system data through a centralized interface.",
-      "part2": "I built a dynamic and user-friendly interface using React.js, integrating RESTful APIs to fetch and manage data. I focused on state management, component-based architecture, and building a modular and maintainable React application."
+      "part1": "In my graduation project, I designed and developed the admin panel of a Smart Home System web application. The panel enables administrators to monitor device statuses and manage smart home devices through a centralized interface. I built the interface using React.js and integrated RESTful APIs for data communication and management. I focused on reusable components, state management, and creating a modular and maintainable application structure."
     },
     "projectLink": "https://github.com/busebz/Smart-Home-Systems",
     "siteLink": "https://smarthome.busenurboz.com",
     "images": [
       "images/smart-home/1.png",
       "images/smart-home/2.png",
-      "images/smart-home/3.png"
-    ],
-    "mobileImages": [
-      "images/smart-home/mobil-1.jpg",
-      "images/smart-home/mobil-2.jpg",
-      "images/smart-home/mobil-3.jpg",
-      "images/smart-home/mobil-4.jpg"
+      "images/smart-home/3.png",
+      "images/smart-home/4.png",
+      "images/smart-home/5.png"
     ],
     "loginInfo": {
       "email": "admin@admin.com",
@@ -48,11 +45,10 @@
     }
   },
   {
-    "id": "3",
+    "id": "employee-tracking-system",
     "title": "Employee Tracking System",
     "description": {
-      "part1": "I developed an employee tracking system using ASP.NET Core MVC, SQL Server, and Entity Framework. The application allows admins to manage employee data, including personal details, position, salary, and email. On the main page, admins can view the employee list and update or delete information.",
-      "part2": "Additionally, the application includes an 'Add Employee' page for adding new employees, and each employee has a detailed page for further management. The system's intuitive interface and seamless database integration ensure efficient and accurate tracking of employee data."
+      "part1": "I developed an employee tracking system using ASP.NET Core MVC, SQL Server, and Entity Framework. The application allows administrators to manage employee information, including personal details, department, salary, and email, through a centralized interface. It includes features for adding, viewing, updating, and deleting employee records, along with dedicated detail pages for each employee, with a focus on CRUD operations, database integration, and a clear and maintainable MVC application structure."
     },
     "projectLink": "https://github.com/busebz/Employee-Tracking-System",
     "siteLink": "",
@@ -61,16 +57,15 @@
       "images/employee-tracking/2.png",
       "images/employee-tracking/3.png",
       "images/employee-tracking/4.png",
-      "images/employee-tracking/5.png"
-    ],
-    "mobileImages": ""
+      "images/employee-tracking/5.png",
+      "images/employee-tracking/6.png"
+    ]
   },
   {
-    "id": "4",
+    "id": "invoice-project",
     "title": "Invoice Project",
     "description": {
-      "part1": "During my internship, I developed a comprehensive customer billing system using C#, Windows Forms, ADO.NET and SQL Server. The system stored customer, product, and invoice information in separate tables, with products categorized and allowing for special promotions to be defined for each item. Users could add, delete, and update customer, product, and invoice data through the system, with invoices automatically generated and printed based on customer information and purchased products.",
-      "part2": "Additionally, the system allowed for product and customer data to be exported to Excel for external data analysis."
+      "part1": "During my internship, I developed a customer billing system using C#, Windows Forms, ADO.NET, and SQL Server. The application allows users to manage customer, product, and invoice data, define product categories and promotions, and automatically generate invoices based on customer information and purchased products. It also supports exporting customer and product data to Excel for further analysis."
     },
     "projectLink": "https://github.com/busebz/Invoice-Project",
     "siteLink": "",
@@ -82,15 +77,13 @@
       "images/invoice-project/5.png",
       "images/invoice-project/6.png",
       "images/invoice-project/7.png"
-    ],
-    "mobileImages": ""
+    ]
   },
   {
-    "id": "5",
+    "id": "customer-invoicing-system",
     "title": "Customer Invoicing System",
     "description": {
-      "part1": "During my internship, I developed a customer invoicing application using C#, Windows Forms, ADO.NET and SQL Server. The application allows admins to enter a customer code and retrieve customer information from the database. Admins can then add, update, and delete invoice items, and export them to Excel. The project also includes functions to calculate both foreign currency and local currency amounts, ensuring accurate invoicing.",
-      "part2": "During the development of this project, I enhanced my technical skills by managing database operations with SQL Server, designing the user interface with C#, and implementing data export to Excel."
+      "part1": "During my internship, I developed a customer invoicing application using C#, Windows Forms, ADO.NET, and SQL Server. The application allows administrators to retrieve customer information using a customer code, manage invoice items, and calculate both foreign and local currency amounts. It also supports exporting invoice data to Excel, with a focus on database operations, invoice management, and accurate data processing."
     },
     "projectLink": "https://github.com/busebz/Customer-Invoicing-System",
     "siteLink": "",
@@ -99,7 +92,6 @@
       "images/customer-invoicing/2.png",
       "images/customer-invoicing/3.png",
       "images/customer-invoicing/4.png"
-    ],
-    "mobileImages": ""
+    ]
   }
 ]

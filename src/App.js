@@ -1,42 +1,28 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Layout from "./layouts/Layout";
+import Navbar from "./components/Navbar";
 
 import Homepage from "./pages/Homepage";
-import ResumePage from "./pages/ResumePage";
-import ProjectsPage from "./pages/ProjectsPage";
-import MobileImagesPage from "./pages/MobileImagesPage";
+import ProjectDetailPage from "./pages/ProjectDetail";
 
 function App() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/projects.json")
-      .then((response) => response.json())
-      .then(setProjects)
-      .catch(console.error);
-  }, []);
-
   return (
     <Router>
-      <Layout>
+      <Navbar />
+
+      <main>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/resume" element={<ResumePage />} />
+
           <Route
-            path="/projects"
-            element={<ProjectsPage projects={projects} />}
-          />
-          <Route
-            path="/projects/:id/mobileImages"
-            element={<MobileImagesPage projects={projects} />}
+            path="/projects/:id"
+            element={<ProjectDetailPage />}
           />
         </Routes>
-      </Layout>
+      </main>
     </Router>
   );
 }

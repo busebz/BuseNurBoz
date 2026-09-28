@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Frontend",
+    "items": [
+      {
+        "name": "React",
+        "icon": "react",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "typescript",
+        "color": "#3178C6"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript",
+        "color": "#F7DF1E"
+      },
+      {
+        "name": "HTML5",
+        "icon": "html5",
+        "color": "#E34F26"
+      },
+      {
+        "name": "CSS3",
+        "icon": "css",
+        "color": "#663399"
+      }
+    ]
+  },
+  {
+    "title": "Backend",
+    "items": [
+      {
+        "name": "C#",
+        "icon": "csharp",
+        "color": "#512BD4"
+      },
+      {
+        "name": ".NET",
+        "icon": "dotnet",
+        "color": "#512BD4"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs",
+        "color": "#5FA04E"
+      },
+      {
+        "name": "Express.js",
+        "icon": "express",
+        "color": "#FFFFFF"
+      }
+    ]
+  },
+  {
+    "title": "Database",
+    "items": [
+      {
+        "name": "Microsoft SQL Server",
+        "icon": "mssql",
+        "color": "#CC2927"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb",
+        "color": "#47A248"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql",
+        "color": "#4479A1"
+      }
+    ]
+  },
+  {
+    "title": "Tools & Others",
+    "items": [
+      {
+        "name": "Git",
+        "icon": "git",
+        "color": "#F05032"
+      },
+      {
+        "name": "Azure DevOps",
+        "icon": "azuredevops",
+        "color": "#0078D7"
+      },
+      {
+        "name": "Docker",
+        "icon": "docker",
+        "color": "#2496ED"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman",
+        "color": "#FF6C37"
+      }
+    ]
+  }
+]
