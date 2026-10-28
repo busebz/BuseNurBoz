@@ -1,600 +1,317 @@
 .header {
-  top: 0;
-  left: 0;
   width: 100%;
+  position: sticky;
+  top: 0;
   z-index: 1000;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: transparent;
+  backdrop-filter: none;
 }
 
 .navbar {
   width: 92%;
   max-width: 1500px;
-  height: 100px;
+  min-height: 100px;
   margin: 0 auto;
+  padding: 0 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
+  box-sizing: border-box;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  margin-left: 55px;
+  flex-shrink: 0;
+  gap: 0;
   padding: 0;
+  margin: 0;
   border: none;
   background: transparent;
-  font-family: inherit;
+  color: inherit;
+  font: inherit;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .brandDot {
-  width: 20px;
-  height: 20px;
-  margin-right: 14px;
-  border-radius: 50%;
-  background: #b0ccff;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
+  border-radius: 50%;
+  background: #47b0ca;
+  margin-right: 10px;
 }
 
 .name {
-  color: #f5f6fa;
-  font-size: 1.65rem;
-  font-weight: 650;
-  letter-spacing: -0.03em;
-}
-
-.name span {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
   color: #f5f6fa;
 }
 
 .jobTitle {
-  margin-left: 18px;
-  color: #d7dbe5;
-  font-size: 1.12rem;
+  margin-left: 12px;
+  font-size: 19px;
   font-weight: 400;
+  color: #d7dbe5;
+  white-space: nowrap;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  gap: 24px;
+  flex-shrink: 0;
 }
 
 .navLinks {
   display: flex;
   align-items: center;
-  height: 44px;
+  gap: 28px;
 }
 
 .navItem {
   position: relative;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15px;
+  padding: 10px 0;
   border: none;
   background: transparent;
-  color: #e1e4ec;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
+  color: #d7dbe5;
+  font: inherit;
+  font-size: 19px;
   cursor: pointer;
-  transition: color 0.25s ease;
-}
-
-.navItem:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 1px;
-  height: 23px;
-  background: rgba(190, 200, 220, 0.28);
-  transform: translateY(-50%);
+  white-space: nowrap;
+  transition: color 0.2s ease;
 }
 
 .navItem:hover,
 .navItem.active {
-  color: #a9bfef;
+  color: #47b0ca;
 }
 
-.navItem.active::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -2px;
-  width: 34px;
-  height: 2px;
-  border-radius: 2px;
-  background: #a9bfef;
-  transform: translateX(-50%);
-  box-shadow: 0 0 7px rgba(49, 90, 168, 0.22);
-}
-
-.cvWrapper {
-  position: relative;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  margin-left: 7px;
-  padding-left: 13px;
-}
-
-.cvWrapper::before {
+.navItem::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  width: 1px;
+  bottom: 3px;
+  width: 0;
+  height: 2px;
+  background: #47b0ca;
+  transition: width 0.2s ease;
+}
+
+.navItem:hover::after,
+.navItem.active::after {
+  width: 100%;
+}
+
+.cvWrapper {
+  display: flex;
+  align-items: center;
   height: 42px;
-  background: rgba(190, 200, 220, 0.28);
-  transform: translateY(-50%);
+  padding-left: 0;
+  border-left: none;
+  flex-shrink: 0;
 }
 
 .cvLink {
-  position: relative;
-  min-width: 62px;
-  height: 38px;
-  padding: 0 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(169, 191, 239, 0.5);
-  border-radius: 8px;
-  background: rgba(20, 39, 78, 0.28);
-  color: #a9bfef;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  min-width: 105px;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid #47b0ca;
+  border-radius: 6px;
+  color: #47b0ca;
+  background: transparent;
   text-decoration: none;
-  box-sizing: border-box;
-  transition:
-    color 0.25s ease,
-    border-color 0.25s ease,
-    background-color 0.25s ease,
-    transform 0.25s ease;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cvLink:hover {
+  background: #47b0ca;
+  color: #fff;
 }
 
 .cvLink::after {
   content: "↗";
-  position: static;
-  width: auto;
-  height: auto;
-  margin-left: 9px;
-  background: none;
-  color: #a9bfef;
-  font-size: 1.1rem;
-  font-weight: 400;
-  transform: none;
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
+  margin-left: 7px;
+  font-size: 16px;
 }
 
-.cvLink:hover {
-  color: #d8e3ff;
-  border-color: rgba(169, 191, 239, 0.8);
-  background: rgba(35, 62, 115, 0.32);
-  transform: translateY(-1px);
-}
-
-.cvLink:hover::after {
-  color: #d8e3ff;
-  transform: translate(2px, -2px);
-}
-
-/* LARGE DESKTOP */
-
+/* Large screens */
 @media screen and (min-width: 1450px) {
   .navbar {
     max-width: 1600px;
-    height: 104px;
-  }
-
-  .brandDot {
-    width: 21px;
-    height: 21px;
-  }
-
-  .name {
-    font-size: 1.78rem;
-  }
-
-  .jobTitle {
-    font-size: 1.18rem;
-  }
-
-  .navItem,
-  .cvLink {
-    font-size: 1.06rem;
-  }
-
-  .navItem {
-    padding: 0 16px;
-  }
-
-  .cvLink {
-    min-width: 65px;
-    height: 40px;
-  }
-
-  .cvLink::after {
-    font-size: 1.16rem;
   }
 }
-
-/* LARGE DESKTOP 2 */
-
-@media screen and (min-width: 1600px) {
-  .navbar {
-    height: 106px;
-  }
-
-  .brandDot {
-    width: 21.5px;
-    height: 21.5px;
-    margin-right: 15px;
-  }
-
-  .name {
-    font-size: 1.84rem;
-  }
-
-  .jobTitle {
-    margin-left: 19px;
-    font-size: 1.22rem;
-  }
-
-  .navLinks,
-  .navItem,
-  .cvWrapper {
-    height: 47px;
-  }
-
-  .navItem {
-    padding: 0 16.5px;
-    font-size: 1.1rem;
-  }
-
-  .navItem:not(:last-child)::before {
-    height: 24px;
-  }
-
-  .navItem.active::after {
-    width: 36px;
-  }
-
-  .cvWrapper {
-    margin-left: 8px;
-    padding-left: 14px;
-  }
-
-  .cvWrapper::before {
-    height: 43px;
-  }
-
-  .cvLink {
-    min-width: 67px;
-    height: 41px;
-    padding: 0 17px;
-    font-size: 1.1rem;
-  }
-
-  .cvLink::after {
-    margin-left: 10px;
-    font-size: 1.2rem;
-  }
-}
-
-/* LARGE DESKTOP 3 */
 
 @media screen and (min-width: 1700px) {
   .navbar {
     max-width: 1700px;
   }
-
-  .name {
-    font-size: 1.9rem;
-  }
-
-  .jobTitle {
-    font-size: 1.26rem;
-  }
-
-  .navItem,
-  .cvLink {
-    font-size: 1.14rem;
-  }
-
-  .cvLink::after {
-    font-size: 1.24rem;
-  }
 }
 
-/* LARGE DESKTOP 4 */
-
-@media screen and (min-width: 1800px) {
-  .navbar {
-    height: 108px;
-  }
-
-  .brandDot {
-    width: 22px;
-    height: 22px;
-    margin-right: 15px;
-  }
-
-  .name {
-    font-size: 1.96rem;
-  }
-
-  .jobTitle {
-    margin-left: 20px;
-    font-size: 1.3rem;
-  }
-
-  .navLinks,
-  .navItem,
-  .cvWrapper {
-    height: 48px;
-  }
-
-  .navItem {
-    padding: 0 17px;
-    font-size: 1.18rem;
-  }
-
-  .navItem:not(:last-child)::before {
-    height: 25px;
-  }
-
-  .navItem.active::after {
-    width: 38px;
-  }
-
-  .cvWrapper {
-    margin-left: 8px;
-    padding-left: 14px;
-  }
-
-  .cvWrapper::before {
-    height: 44px;
-  }
-
-  .cvLink {
-    min-width: 69px;
-    height: 42px;
-    padding: 0 17px;
-    font-size: 1.18rem;
-  }
-
-  .cvLink::after {
-    font-size: 1.28rem;
-  }
-}
-
-/* EXTRA LARGE DESKTOP */
-
-@media screen and (min-width: 2000px) {
-  .navbar {
-    height: 110px;
-  }
-
-  .brandDot {
-    width: 22.5px;
-    height: 22.5px;
-    margin-right: 16px;
-  }
-
-  .name {
-    font-size: 2.02rem;
-  }
-
-  .jobTitle {
-    margin-left: 20px;
-    font-size: 1.34rem;
-  }
-
-  .navLinks,
-  .navItem,
-  .cvWrapper {
-    height: 49px;
-  }
-
-  .navItem {
-    padding: 0 17.5px;
-    font-size: 1.22rem;
-  }
-
-  .navItem:not(:last-child)::before {
-    height: 26px;
-  }
-
-  .navItem.active::after {
-    width: 39px;
-  }
-
-  .cvWrapper {
-    margin-left: 9px;
-    padding-left: 15px;
-  }
-
-  .cvWrapper::before {
-    height: 45px;
-  }
-
-  .cvLink {
-    min-width: 71px;
-    height: 43px;
-    padding: 0 18px;
-    font-size: 1.22rem;
-  }
-
-  .cvLink::after {
-    font-size: 1.32rem;
-  }
-}
-
-/* TABLET */
-
-@media screen and (max-width: 1100px) {
+/* Medium screens */
+@media screen and (max-width: 1250px) {
   .navbar {
     width: 94%;
-    max-width: none;
-    height: 100px;
-  }
-
-  .brand {
-    margin-left: 20px;
-  }
-
-  .brandDot {
-    width: 20px;
-    height: 20px;
-    margin-right: 14px;
-  }
-
-  .name {
-    font-size: 1.65rem;
-  }
-
-  .jobTitle {
-    margin-left: 18px;
-    font-size: 1.12rem;
+    padding: 0 20px;
+    gap: 16px;
   }
 
   .navigation {
-    margin-right: 5px;
+    gap: 18px;
   }
 
-  .navLinks,
-  .navItem,
-  .cvWrapper {
-    height: 44px;
+  .navLinks {
+    gap: 18px;
   }
 
-  .navItem {
-    padding: 0 11px;
-    font-size: 1rem;
-  }
-
-  .cvWrapper {
-    margin-left: 6px;
-    padding-left: 11px;
-  }
-
-  .cvLink {
-    min-width: 62px;
-    height: 38px;
-    padding: 0 16px;
-    font-size: 1rem;
-  }
-
-  .cvLink::after {
-    font-size: 1.1rem;
+  .jobTitle {
+    margin-left: 9px;
   }
 }
 
-/* MOBILE */
+/* Small laptops and tablets */
+@media screen and (max-width: 1050px) {
+  .navbar {
+    min-height: 88px;
+    padding: 0 10px;
+    gap: 12px;
+  }
 
+  .brandDot {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .jobTitle {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .navigation {
+    gap: 12px;
+  }
+
+  .navLinks {
+    gap: 12px;
+  }
+
+  .navItem {
+    font-size: 15px;
+  }
+
+  .cvLink {
+    min-width: 90px;
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 850px) {
   .navbar {
     width: 92%;
+    min-height: 78px;
+    padding: 0;
+    gap: 12px;
   }
 
   .navLinks {
     display: none;
   }
 
-  .brand {
-    margin-left: 0;
-  }
-
   .navigation {
-    margin-right: 0;
-  }
-
-  .brandDot {
-    width: 20px;
-    height: 20px;
-    margin-right: 14px;
+    margin-left: auto;
+    gap: 0;
   }
 
   .name {
-    font-size: 1.65rem;
+    font-size: 20px;
   }
 
   .jobTitle {
-    margin-left: 16px;
-    font-size: 1.05rem;
+    font-size: 15px;
   }
 
   .cvWrapper {
-    margin-left: 0;
-    padding-left: 18px;
-  }
-
-  .cvWrapper::before {
-    height: 42px;
+    height: auto;
   }
 
   .cvLink {
-    min-width: 62px;
-    height: 38px;
-    padding: 0 16px;
-    font-size: 1rem;
-  }
-
-  .cvLink::after {
-    margin-left: 9px;
-    font-size: 1.1rem;
+    min-height: 40px;
+    padding: 0 13px;
+    font-size: 15px;
   }
 }
 
-/* SMALL MOBILE */
-
+/* Small mobile */
 @media screen and (max-width: 520px) {
   .navbar {
-    width: 94%;
-    height: 95px;
+    width: 92%;
+    min-height: 72px;
+    gap: 10px;
   }
 
   .brandDot {
-    width: 18px;
-    height: 18px;
-    margin-right: 11px;
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
   }
 
   .name {
-    font-size: 1.4rem;
+    font-size: 18px;
   }
 
   .jobTitle {
-    margin-left: 11px;
-    font-size: 0.9rem;
-  }
-
-  .cvWrapper {
-    padding-left: 12px;
-  }
-
-  .cvWrapper::before {
-    height: 38px;
+    display: none;
   }
 
   .cvLink {
-    min-width: 58px;
-    height: 36px;
-    padding: 0 12px;
-    border-radius: 7px;
-    font-size: 0.9rem;
+    min-height: 38px;
+    padding: 0 11px;
+    font-size: 14px;
+  }
+}
+
+/* Very small mobile */
+@media screen and (max-width: 360px) {
+  .navbar {
+    width: 94%;
+    min-height: 68px;
+    gap: 8px;
+  }
+
+  .brandDot {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+  }
+
+  .name {
+    font-size: 17px;
+  }
+
+  .cvLink {
+    min-height: 36px;
+    padding: 0 9px;
+    font-size: 13px;
   }
 
   .cvLink::after {
-    margin-left: 6px;
-    font-size: 1rem;
+    margin-left: 5px;
   }
 }
